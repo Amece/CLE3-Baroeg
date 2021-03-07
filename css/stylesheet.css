@@ -1,0 +1,79 @@
+@media(min-width: 768px){
+    .container-1, .container-nav, .container-footer{
+        display: flex;
+        /* Code to align uneven boxes on top, bottom or center
+        align-items:flex-start;
+        align-items:flex-end;
+        align-items:center;
+         */
+    }
+}
+
+body{
+    background-color: #252525;
+}
+#main{
+    color: ghostwhite;
+}
+.container-nav, .container-footer{
+    background-color: #181818;
+}
+
+.container-1 div, .container-nav div, .container-footer div{
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.box-1{
+    flex:1;
+    /* If you need to change the order of the boxes
+    order: 1;
+    */
+}
+.box-2{
+    flex:2;
+}
+.box-3{
+    flex:1;
+}
+
+.nav-box{
+    flex:1;
+}
+
+.footer-box{
+    flex:1;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation bar */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover{
+    background-color: darkgrey;
+}
