@@ -14,7 +14,6 @@ const client = new tmi.Client({
 });
 client.connect().catch(console.error);
 client.on('message', (channel, tags, message, self) => {
-	if(self) return;
     console.log(channel, message);
 	//if(message.toLowerCase() === '!hello') {
 	//	client.say(channel, `@${tags.username}, heya!`);
