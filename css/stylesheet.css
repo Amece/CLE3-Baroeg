@@ -11,14 +11,23 @@
 
 body{
     background-color: #252525;
+    color: ghostwhite;
 }
 #main{
-    color: ghostwhite;
+
 }
 .container-nav, .container-footer{
     background-color: #181818;
 }
-
+.container-1{
+    flex-direction: row;
+    border: 2px solid red;
+    min-height: 0;
+}
+.box-1, .box-2, .box-3{
+    display: flex;
+    border: 2px solid blue;
+}
 .container-1 div, .container-nav div, .container-footer div{
     border: 1px #ccc solid;
     padding: 10px;
@@ -76,4 +85,9 @@ li a{
 /* Change the link color to #111 (black) on hover */
 li a:hover{
     background-color: darkgrey;
+}
+
+iframe {
+    display:block;
+    width:100%;
 }
